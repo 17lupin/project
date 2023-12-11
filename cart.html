@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Tech Tech Store | E-commerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="TechStore/storelogo.jpg" width="125px"></a>
+            </div>
+            <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+            </nav>
+            <a href="cart.html"><img src="TechStore/cart.png" width="30px" height="30px"></a>
+            <img src="TechStore/menu.png" onclick="menutoggle()" class="menu-icon">
+        </div>
+        
+    </div>
+    
+    
+<!--------------Cart Items details--------------->
+<div class="small-container cart-page">
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="TechStore/Crucial 8BG ram.jpg">
+                <div>
+                    <p>Crucial RAM 8GB DDR4 3200MHz CL22 (or 2933MHz or 2666MHz) Laptop Memory CT8G4SFRA32A</p>
+                    <small>Price: Rs 1499.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs 1499.00</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="TechStore/WD green1899.webp">
+                <div>
+                    <p>Western Digital WD Green SATA 240GB, Up to 545MB/s, 2.5 Inch/7 mm, 3Y Warranty, Internal Solid State Drive (SSD) (WDS240G3G0A)</p>
+                    <small>Price: Rs 1899.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs 1899.00</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="TechStore/key.jpg">
+                <div>
+                    <p>Dell USB Wireless Keyboard and Mouse Set- KM3322W, Anti-Fade & Spill-Resist</p>
+                    <small>Price: Rs 1349.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs 1349.00</td>
+    </tr>
+</table>
+    
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>Rs 4747.00</td>
+            </tr>
+            <tr>
+                <td>GST(18%)</td>
+                <td>Rs 854.46</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Rs 5601.46</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="total-price">
+        <a href="#" class="btn">Proceed to checkout &#8594;</a>
+    </div>
+    
+</div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+            <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="TechStore/play-store.png">
+                    <img src="TechStore/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+            <img src="TechStore/storelogo.jpg">
+                <p>The purpose of a Tech Tech Store is to provide a retail space where customers can purchase various types of technology products and related accessories.</p>
+            </div>
+            <div class="footer-col3">
+            <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li><br>
+                    <li>Blog Post</li><br>
+                    <li>Return Policy</li><br>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+            <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li><br>
+                    <li>Twitter<li><br>
+                    <li>Instagram</li><br>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Tech Tech Store</p>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+    
+</script>
+
+
+
+</body>
+</html>
+
